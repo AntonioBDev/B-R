@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <div class="barra">
+          <a href="/">
+            <img src="src/img/logo.svg" alt="Logotipo de Bienes Raices" />
+          </a>
+
+          <nav class="navegacion">
+            <a href="nosotros.html" class="enlace">Nosotros</a>
+            <a href="anuncios.html" class="enlace">Anuncios</a>
+            <a href="blog.html" class="enlace">Blog</a>
+            <a href="contacto.html" class="enlace">Contacto</a>
+          </nav>
+        </div>
+        <!--Barra-->
+      </div>
+    </header>
+
+    <main class="contenedor seccion">
+      <h1>Contacto</h1>
+      <picture>
+        <source srcset="build/img/destacada3.webp" type="image/webp" />
+        <source srcset="build/img/destacada3.jpg" type="image/jpg" />
+        <img loading="lazy" src="build/img/destacada3.jpg" alt="" />
+      </picture>
+
+      <form>
+        <fieldset>
+          <legend>Información Personal</legend>
+          <div class="campos">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" type="text" placeholder="Tu Nombre" />
+            </div>
+            <!--campo-->
+
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" placeholder="Tu Email" />
+            </div>
+            <!--campo-->
+
+            <div class="campo">
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" type="tel" placeholder="Tu Teléfono" />
+            </div>
+            <!--campo-->
+
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje"></textarea>
+            </div>
+            <!--campo-->
+          </div>
+          <!--campos-->
+        </fieldset>
+
+        <fieldset>
+          <legend>Información Sobre la Propiedad</legend>
+          <div class="campos">
+            <div class="campo">
+              <label for="">Vende o Compra</label>
+              <select>
+                <option value="">--Seleccione--</option>
+                <option value="campra">Compra</option>
+                <option value="vende">Vende</option>
+              </select>
+            </div>
+            <!--campo-->
+
+            <div class="campo">
+              <label for="costo">Precio o Presupuesto</label>
+              <input
+                id="costo"
+                type="number"
+                placeholder="Tu Precio o Presupuesto"
+              />
+            </div>
+            <!--campo-->
+          </div>
+          <!--campos-->
+        </fieldset>
+
+        <fieldset>
+          <legend>Información Personal</legend>
+          <div class="campos">
+            <div class="campo">
+              <p>Como desea ser contactado</p>
+              <div>
+                <label for="contactar-telefono">Teléfono</label>
+                <input id="contactar-telefono" type="radio" name="contacto" value="telefono"/>
+              </div>
+              <div>
+                <label for="contactar-email">E-mail</label>
+                <input id="contactar-email" type="radio" name="contacto" value="email"/>
+              </div>
+            </div><!--campo-->
+
+            <div class="campo">
+                <p>Si eligió teléfono, elija la fecha y hora</p>
+                <div>
+                  <label for="fecha">Fecha</label>
+                  <input id="fecha" type="date"/>
+                </div>
+                <div>
+                  <label for="hora">Hora</label>
+                  <input id="hora" type="time"/>
+                </div>
+              </div><!--campo-->
+            <!--campo-->
+          </div>
+          <!--campos-->
+        </fieldset>
+
+        <input type="submit" value="Enviar" class="boton-verde" />
+      </form>
+    </main>
+
+    <footer class="footer seccion">
+      <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+          <a href="nosotros.html" class="enlace">Nosotros</a>
+          <a href="anuncios.html" class="enlace">Anuncios</a>
+          <a href="blog.html" class="enlace">Blog</a>
+          <a href="contacto.html" class="enlace">Contacto</a>>
+        </nav>
+      </div>
+      <p class="copyright">Todo los derechos reservados &copy;</p>
+    </footer>
+    <script src="build/js/bundle.min.js"></script>
+  </body>
+</html>
