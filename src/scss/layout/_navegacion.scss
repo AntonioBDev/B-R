@@ -1,20 +1,66 @@
-.barra{
+.dark{
     display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
+    justify-content: end;
+    margin-top: 3rem;
+    img{
+        width: 2.5rem;
+        filter: invert(100%);
 
-    @include tablet{
-        flex-direction: row;
-        justify-content: space-between;
-
-        a img{
-            height: 4.5rem;
+        &:hover{
+            cursor: pointer;
         }
     }
 }
 
+.barra{
+    display: flex;
+    flex-direction: column;
+
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        a img{
+            height: 4.5rem;
+        }
+
+        .menu-movil{
+            display: none;
+        }
+
+    }
+}
+
+.barra-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    img{
+        width: 30rem;
+    }
+
+    .menu-movil{
+        cursor: pointer;
+        // margin-right: 1rem;
+        img{
+            width: 3rem;
+        }
+    }
+}
+
+.nav-none{
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in, opacity .3s linear, height .3s linear;
+}
+
 .navegacion{
     @include tablet{
+        visibility: visible;
+        opacity: 1;
         display: flex;
         align-items: center;
     }
@@ -39,3 +85,17 @@
         }
     }
 }
+
+.mostrar-navegacion{
+    // display: block;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    @include tablet{
+        // display: flex;
+        
+    }
+}
+
+
+

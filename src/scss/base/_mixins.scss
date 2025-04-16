@@ -32,9 +32,11 @@
     padding: 1rem 3rem;
     margin-top: $separacion / 2;
     display: $flex;
+    border: none;
 
     &:hover{
         background-color: darken($bgColor, 5);
+        cursor: pointer;
     }
 
 }

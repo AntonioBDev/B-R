@@ -1,0 +1,30 @@
+.mode-dark{
+    background-color: $grisOscuro;
+
+    h1,h2,h3,h4,a, label{
+        color: $gris;
+    }
+
+    p, legend, blockquote{
+        color: $blanco;
+    }
+
+    .header,
+    .footer{
+        background-color: darken($grisOscuro, 10);
+    }
+
+    .anuncio{
+        background-color: darken($grisOscuro, 10);
+    
+        .precio{
+            color: $verde;
+        }
+        
+    }
+
+    .iconos-caracteristicas img{
+        filter: invert(100%);
+    }
+
+}
